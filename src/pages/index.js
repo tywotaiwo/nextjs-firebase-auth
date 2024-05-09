@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import AuthModal from '../components/AuthModal';
 import { useAuth } from '../contexts/AuthContext';
+import { useUserProfile } from '../contexts/UserContext';
 
 const Navbar = () => {
     const [isModalOpen, setModalOpen] = useState(false);
-    const { user, logoutUser } = useAuth();
+    const { logoutUser } = useAuth();
+    const userProfile = useUserProfile();
 
     return (
         <nav>
-            {user ? (
-                <button onClick={logoutUser}>Logout</button>
+            {userProfile ? (
+                <>
+                    <div>Welcome, {userProfile.displayName}! Member since: {userProfile.memberSince}</div>
+                    <button onClick={logoutUser}>Logout</button>
+                </>
             ) : (
                 <button onClick={() => setModalOpen(true)}>Login</button>
             )}
