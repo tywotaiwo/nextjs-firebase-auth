@@ -26,16 +26,18 @@ Follow these steps to get the project up and running on your local machine for d
    ```bash
    git clone https://github.com/tywotaiwo/nextjs-firebase-auth.git
    cd nextjs-firebase-auth
-Install Dependencies
-bash
-Copy code
+
+### Install Dependencies
+
 npm install
-Configure Firebase
-Go to the Firebase Console.
-Create a new project or select an existing one.
-Enable Authentication and choose the sign-in methods (Email/Password & Google sign-in).
-Create a Firestore database in test mode for initial setup.
-Set up Environment Variables
+
+###  Configure Firebase
+- **Go to the Firebase Console.
+- **Create a new project or select an existing one.
+- **Enable Authentication and choose the sign-in methods (Email/Password & Google sign-in).
+- **Create a Firestore database in test mode for initial setup.
+
+### Add firebase to project
 Navigate to src/config/firebase.js and update with your Firebase project settings:
 javascript
 Copy code
@@ -48,29 +50,24 @@ const firebaseConfig = {
   appId: "your_app_id",
   measurementId: "your_measurement_id"
 };
-Run the Development Server
-bash
-Copy code
+
+### Run the Development Server
+
 npm run dev
+
 Visit http://localhost:3000 to view your application.
-Contributing
+
+### Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Fork the Project
+### Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
-License
+### License
 Distributed under the MIT License. See LICENSE for more information.
 
-Acknowledgements
+### Acknowledgements
 Next.js Documentation
 Firebase Documentation
-vbnet
-Copy code
-
-### Key Corrections Made:
-- Added code block syntax with triple backticks ``` for code and command snippets.
-- Ensured that list items under numbered steps are properly indented to display as part of the respective step.
-- Corrected the header for the "Set up Environment Variables" section to reflect that users should update the configuration directly in the code file.
