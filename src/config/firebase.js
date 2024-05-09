@@ -9,14 +9,15 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPasswor
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBZ8eGCaLQ65TgYkUsADyV391JxGpG1l1Q",
-  authDomain: "tarotai-708fa.firebaseapp.com",
-  projectId: "tarotai-708fa",
-  storageBucket: "tarotai-708fa.appspot.com",
-  messagingSenderId: "719480765351",
-  appId: "1:719480765351:web:0f8d1eef1d1d4b0c3e9482",
-  measurementId: "G-1SRS9BLBZF"
+  apiKey: "your_api_key",
+  authDomain: "your_project_id.firebaseapp.com",
+  projectId: "your_project_id",
+  storageBucket: "your_project_id.appspot.com",
+  messagingSenderId: "your_sender_id",
+  appId: "your_app_id",
+  measurementId: "your_measurement_id"
 };
+
 
 
 const app = initializeApp(firebaseConfig);
